@@ -1,0 +1,14 @@
+server:
+  port: 8787
+
+spring:
+  application:
+    name: nativeconfigserver
+  profiles:          #配置文件的获取方式
+    active: native  #读取本地配置
+  cloud:           #本地配置文件的存放路径
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="RestTemplae" />
+        <module name="Ribbons" />
+        <module name="hystrix" />
+        <module name="Consumer" />
+        <module name="Zuul" />
+        <module name="Feign" />
+        <module name="EurekaClient" />
+        <module name="Eurekaserver" />
+        <module name="nativeconfigclient" />
+        <module name="nativeconfigServer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="untitled" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Consumer" options="-parameters" />
+      <module name="EurekaClient" options="-parameters" />
+      <module name="Eurekaserver" options="-parameters" />
+      <module name="Feign" options="-parameters" />
+      <module name="RestTemplae" options="-parameters" />
+      <module name="Ribbons" options="-parameters" />
+      <module name="StudySpringCloud" options="-parameters" />
+      <module name="Zuul" options="-parameters" />
+      <module name="hystrix" options="-parameters" />
+      <module name="nativeconfigServer" options="-parameters" />
+      <module name="nativeconfigclient" options="-parameters" />
+      <module name="untitled" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: configclient
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8787    #设置了本地configserver的访问路径
+      fail-fast: true         #最终会通过spring.application.name + profiles。active
+                                                                 #= 要去configserver中找到配置文件名称(configclient.dev.yml),将其读取

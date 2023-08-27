@@ -1,0 +1,8 @@
+server:
+  port: 8088  #这个serverport是EurekaServer的服务端口
+eureka:
+  client:
+    register-with-eureka: false  #  这是是否要在服务注册中心把它自己也当成一个服务注册服务注册中心，它自己肯定不要把自己当成一个微服务来注册！因为他是EurekaServer
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8088/eureka/
